@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-light: #4ABEBD;
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--Light-Gray);
+}
+
+.container{
+  width: 40%;
+  height: 80%;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+.container .content{
+  background-color: #fff;
+  padding: 35px 55px 35px 35px;
+}
+
+.content h1{
+  color: var(--Cyan);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.content h2{
+  color: var(--Bright-Yellow);
+  font-size: 18px;
+  margin-bottom:15px ;
+}
+.content p{
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.container .content-2{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.content-2 .sign-up{
+  background-color: var(--Cyan);
+  width: 50%;
+  padding: 40px;
+}
+.sign-up h4{
+  color: #fff;
+}
+.sign-up .price{
+  display: flex;
+  align-items: center;
+  margin: 17px 0 10px;
+}
+.sign-up .price h2{
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
+.sign-up .price span{
+  margin-left: 13px;
+  color: var(--Light-Gray);
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.sign-up p {
+  font-size: 15px;
+  color: var(--Light-Gray);
+  margin-bottom: 30px;
+}
+
+.sign-up button {
+  width: 100%;
+  background-color: var(--Bright-Yellow);
+  border:none;
+  border-radius: 5px;
+  padding:15px 60px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+.content-2 .why-us{
+  width: 50%;
+  padding: 40px;
+  background-color: var(--Cyan-light);
+}
+.why-us h4{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.why-us .answer{
+  font-size: 13px;
+  color: var(--Light-Gray);
+}
+.answer p{
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 450px) {
+
+  .container{
+    width: 80%;
+    height: 80%;
+    margin: 10% 0;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  
+  .container .content-2{
+    flex-direction: column;
+    width: 100%;
+  }
+  .content-2 .sign-up {
+    width: 100%;
+  }
+  
+  .content-2 .why-us{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  .container{
+    width: 80%;
+    height: 80%;
+    margin: 10% 0;
+  }
+  
+  .sign-up button {
+    font-size: 12px;
+  }
+}
